@@ -1,0 +1,8 @@
+%h1 WELCOME TO THE MARKETPLACE
+
+
+%table
+  - @courses.each do |course|
+    %tr
+      %td= "Topic: #{course.topic}"
+      %td= "Tutor: #{course.tutor.name}"
